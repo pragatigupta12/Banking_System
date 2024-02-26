@@ -1,0 +1,19 @@
+<% layout("./layouts/boilerplate") -%>
+
+<body> 
+    <div class="row mb-3 mt-3">
+        <div class="col-6 offset-3">
+    <h1 class="mb-3">You Want To Dedit A Amount</h1>
+    <form method="post" action="/client/<%=user._id%>/dedit?_method=put" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="Ammount" class="form-label">enter amount here</label>
+            <input placeholder="enter amount here" name="Ammount" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter Amount Here.
+              </div>
+        </div>
+        <button class="btn btn-success mt-3">submit</button>
+    </form>
+</div>
+</div>
+</body>

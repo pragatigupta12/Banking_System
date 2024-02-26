@@ -1,0 +1,24 @@
+<% layout("./layouts/boilerplate") -%>
+<body>
+   
+   <div class="row">
+    <div class="col-6 offset-3">
+        <h1 class="mb-3">Your Data</h1>
+    <p><b>Username : </b><%=data.Username%></p>
+    <p><b>AccNumber : </b><%=data.AccNumber%></p>
+    <p><b>Ammount: </b><%=data.Ammount%></p>
+    <div class="row">
+        <div class="mb-3 col-md-3">
+    <form method="get" action="/client/<%=data._id%>/credit">
+        <button class="btn btn-success">Credit</button>
+    </form>
+</div>
+<div class="mb-3 col-md-3">
+    <form method="get" action="/client/<%=data._id%>/debit">
+        <button class="btn btn-success">Debit</button>
+    </form>
+    </div>
+</div>
+</div>
+</div>
+</body>
